@@ -8,6 +8,8 @@ The code for the Atmega32u2 controller adapters is available from Raphnet: https
 
 In order to use the Raphnet adapters with four controllers, you need to change their behaviour with the management tool available from his website. However, it doesn't like to play well with what is effectively two adapters connected, so you have to disconnect one of the adapters (I did this by removing the resistors between the Atmega32u2 and the USB hub IC) before programming the other and repeat the process again for the other adapter. There may be a way around doing this with software, but I haven't looked into it thoroughly.
 
+The controllers are detected as DirectInput devices but can be recognised as XInput with various different wrappers like XOutput: https://github.com/csutorasa/XOutput 
+
 The rear I/O shield is a very tight fit height-wise and could probably do with a couple of millimetres being removed from the top in order to fit more comfortably in a Gamecube shell.
 
 
